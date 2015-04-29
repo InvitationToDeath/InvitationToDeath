@@ -1,0 +1,2 @@
+4.5.5f1:1.9.8.0
+C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll
