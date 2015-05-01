@@ -90,6 +90,23 @@ ModelImporter:
     4300028: Object089
     4300030: Object090
     4300032: Object091
+    6400000: Object079
+    6400002: Object080
+    6400004: Object081
+    6400006: Object089
+    6400008: Object090
+    6400010: Object091
+    6400012: rail strigh-perfect010
+    6400014: rail stright026
+    6400016: rail stright073
+    6400018: rail stright074
+    6400020: rail stright075
+    6400022: rail stright077
+    6400024: rail stright078
+    6400026: rail stright079
+    6400028: rail stright080
+    6400030: rail stright082
+    6400032: rail stright083
     7400000: Take 001
     9500000: //RootNode
   materials:
@@ -113,7 +130,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: .00999999978
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
