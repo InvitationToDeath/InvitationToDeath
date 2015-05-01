@@ -47,15 +47,16 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\OVR\Editor\OVRBuild.cs" />
-     <Compile Include="Assets\OVR\Editor\OVRGameView.cs" />
+     <Compile Include="Assets\OVR\Editor\OVRCameraControllerEditor.cs" />
+     <Compile Include="Assets\OVR\Editor\OVRDeviceEditor.cs" />
+     <Compile Include="Assets\OVR\Editor\OVREditorGUIUtility.cs" />
+     <Compile Include="Assets\OVR\Editor\OVRPlayerControllerEditor.cs" />
      <Compile Include="Assets\OVR\Editor\OVRPrefabs.cs" />
-     <Compile Include="Assets\OVR\Editor\OVRShimLoader.cs" />
-     <None Include="Assets\Plugins\donotdelete.txt" />
-     <None Include="Assets\Plugins\x86_64\donotdelete.txt" />
-     <None Include="Assets\OVR\Shaders\TextShader3D.shader" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
+     <None Include="Assets\OVR\OVRImageEffects\OVRLensCorrection_CA.shader" />
+     <None Include="Assets\OVR\OVRImageEffects\OVRLensCorrection.shader" />
      <None Include="Assets\OVR\Shaders\OVRGUIShader.shader" />
-     <None Include="Assets\Plugins\x86\donotdelete.txt" />
+     <None Include="Assets\Plugins\donotdelete.txt" />
  <Reference Include="UnityEditor.Graphs">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
  </Reference>

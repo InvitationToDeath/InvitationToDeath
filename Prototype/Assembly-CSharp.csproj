@@ -46,22 +46,21 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\OVR\Scripts\OVRCameraRig.cs" />
-     <Compile Include="Assets\OVR\Scripts\OVRCommon.cs" />
-     <Compile Include="Assets\OVR\Scripts\OVRDisplay.cs" />
-     <Compile Include="Assets\OVR\Scripts\OVRManager.cs" />
-     <Compile Include="Assets\OVR\Scripts\OVRPluginEvent.cs" />
-     <Compile Include="Assets\OVR\Scripts\OVRTracker.cs" />
-     <Compile Include="Assets\OVR\Scripts\OvrCapi.cs" />
-     <Compile Include="Assets\OVR\Scripts\Util\OVRCrosshair.cs" />
-     <Compile Include="Assets\OVR\Scripts\Util\OVRGUI.cs" />
-     <Compile Include="Assets\OVR\Scripts\Util\OVRGamepadController.cs" />
-     <Compile Include="Assets\OVR\Scripts\Util\OVRGridCube.cs" />
-     <Compile Include="Assets\OVR\Scripts\Util\OVRMainMenu.cs" />
-     <Compile Include="Assets\OVR\Scripts\Util\OVRPlayerController.cs" />
-     <Compile Include="Assets\OVR\Scripts\Util\OVRScreenFade.cs" />
-     <Compile Include="Assets\OVR\Scripts\Util\OVRUGUI.cs" />
-     <Compile Include="Assets\OVR\Scripts\Util\OVRVisionGuide.cs" />
+     <Compile Include="Assets\OVR\OVRImageEffects\OVRImageEffectBase.cs" />
+     <Compile Include="Assets\OVR\OVRImageEffects\OVRLensCorrection.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRCamera.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRCameraController.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRComponent.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRCrosshair.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRDevice.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRGUI.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRGamepadController.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRMagCalibration.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRMainMenu.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRMessenger.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRPlayerController.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRPresetManager.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRUtils.cs" />
      <Compile Include="Assets\Scripts\BulletCtrl.cs" />
      <Compile Include="Assets\Scripts\BulletFire.cs" />
      <Compile Include="Assets\Scripts\CameraRot.cs" />
@@ -74,12 +73,11 @@
      <Compile Include="Assets\Scripts\Network.cs" />
      <Compile Include="Assets\Scripts\PlayerCtrl.cs" />
      <Compile Include="Assets\Scripts\RotX.cs" />
-     <None Include="Assets\Plugins\donotdelete.txt" />
-     <None Include="Assets\Plugins\x86_64\donotdelete.txt" />
-     <None Include="Assets\OVR\Shaders\TextShader3D.shader" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
+     <None Include="Assets\OVR\OVRImageEffects\OVRLensCorrection_CA.shader" />
+     <None Include="Assets\OVR\OVRImageEffects\OVRLensCorrection.shader" />
      <None Include="Assets\OVR\Shaders\OVRGUIShader.shader" />
-     <None Include="Assets\Plugins\x86\donotdelete.txt" />
+     <None Include="Assets\Plugins\donotdelete.txt" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
