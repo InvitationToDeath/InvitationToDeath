@@ -1,0 +1,238 @@
+fileFormatVersion: 2
+guid: c931ff2c3a5da8649a6d9f0b5659def0
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Cylinder002
+    100002: Cylinder004
+    100004: Cylinder005
+    100006: Cylinder009
+    100008: Cylinder010
+    100010: Cylinder017
+    100012: Cylinder023
+    100014: Cylinder024
+    100016: Cylinder025
+    100018: Cylinder026
+    100020: Cylinder027
+    100022: Cylinder028
+    100024: Cylinder029
+    100026: Cylinder030
+    100028: Cylinder031
+    100030: Cylinder032
+    100032: Cylinder033
+    100034: Cylinder034
+    100036: Object079
+    100038: Object080
+    100040: Object095
+    100042: Object096
+    100044: Object097
+    100046: Object098
+    100048: rail strigh-perfect010
+    100050: rail stright073
+    100052: rail stright075
+    100054: rail stright077
+    100056: rail stright078
+    100058: rail stright079
+    100060: rail stright085
+    100062: rail stright086
+    100064: rail stright087
+    100066: rail stright088
+    100068: rail stright089
+    100070: //RootNode
+    400000: Cylinder002
+    400002: Cylinder004
+    400004: Cylinder005
+    400006: Cylinder009
+    400008: Cylinder010
+    400010: Cylinder017
+    400012: Cylinder023
+    400014: Cylinder024
+    400016: Cylinder025
+    400018: Cylinder026
+    400020: Cylinder027
+    400022: Cylinder028
+    400024: Cylinder029
+    400026: Cylinder030
+    400028: Cylinder031
+    400030: Cylinder032
+    400032: Cylinder033
+    400034: Cylinder034
+    400036: Object079
+    400038: Object080
+    400040: Object095
+    400042: Object096
+    400044: Object097
+    400046: Object098
+    400048: rail strigh-perfect010
+    400050: rail stright073
+    400052: rail stright075
+    400054: rail stright077
+    400056: rail stright078
+    400058: rail stright079
+    400060: rail stright085
+    400062: rail stright086
+    400064: rail stright087
+    400066: rail stright088
+    400068: rail stright089
+    400070: //RootNode
+    2300000: Cylinder002
+    2300002: Cylinder004
+    2300004: Cylinder005
+    2300006: Cylinder009
+    2300008: Cylinder010
+    2300010: Cylinder017
+    2300012: Cylinder023
+    2300014: Cylinder024
+    2300016: Cylinder025
+    2300018: Cylinder026
+    2300020: Cylinder027
+    2300022: Cylinder028
+    2300024: Cylinder029
+    2300026: Cylinder030
+    2300028: Cylinder031
+    2300030: Cylinder032
+    2300032: Cylinder033
+    2300034: Cylinder034
+    2300036: Object079
+    2300038: Object080
+    2300040: Object095
+    2300042: Object096
+    2300044: Object097
+    2300046: Object098
+    2300048: rail strigh-perfect010
+    2300050: rail stright073
+    2300052: rail stright075
+    2300054: rail stright077
+    2300056: rail stright078
+    2300058: rail stright079
+    2300060: rail stright085
+    2300062: rail stright086
+    2300064: rail stright087
+    2300066: rail stright088
+    2300068: rail stright089
+    3300000: Cylinder002
+    3300002: Cylinder004
+    3300004: Cylinder005
+    3300006: Cylinder009
+    3300008: Cylinder010
+    3300010: Cylinder017
+    3300012: Cylinder023
+    3300014: Cylinder024
+    3300016: Cylinder025
+    3300018: Cylinder026
+    3300020: Cylinder027
+    3300022: Cylinder028
+    3300024: Cylinder029
+    3300026: Cylinder030
+    3300028: Cylinder031
+    3300030: Cylinder032
+    3300032: Cylinder033
+    3300034: Cylinder034
+    3300036: Object079
+    3300038: Object080
+    3300040: Object095
+    3300042: Object096
+    3300044: Object097
+    3300046: Object098
+    3300048: rail strigh-perfect010
+    3300050: rail stright073
+    3300052: rail stright075
+    3300054: rail stright077
+    3300056: rail stright078
+    3300058: rail stright079
+    3300060: rail stright085
+    3300062: rail stright086
+    3300064: rail stright087
+    3300066: rail stright088
+    3300068: rail stright089
+    4300000: Object079
+    4300002: Object080
+    4300004: Cylinder002
+    4300006: Cylinder004
+    4300008: Cylinder005
+    4300010: Cylinder009
+    4300012: Cylinder010
+    4300014: rail strigh-perfect010
+    4300016: rail stright073
+    4300018: rail stright075
+    4300020: rail stright077
+    4300022: rail stright078
+    4300024: rail stright079
+    4300026: Cylinder017
+    4300028: Object095
+    4300030: Cylinder023
+    4300032: Cylinder024
+    4300034: Cylinder025
+    4300036: Object096
+    4300038: Cylinder026
+    4300040: Cylinder027
+    4300042: Object097
+    4300044: Cylinder028
+    4300046: Object098
+    4300048: Cylinder029
+    4300050: rail stright085
+    4300052: Cylinder030
+    4300054: rail stright086
+    4300056: Cylinder031
+    4300058: rail stright087
+    4300060: Cylinder032
+    4300062: Cylinder033
+    4300064: rail stright088
+    4300066: Cylinder034
+    4300068: rail stright089
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

@@ -1,0 +1,148 @@
+fileFormatVersion: 2
+guid: 09f15a73d37cae94d9667ecb1af5f7b6
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Object079
+    100002: Object080
+    100004: Object081
+    100006: Object089
+    100008: Object090
+    100010: Object091
+    100012: rail strigh-perfect010
+    100014: rail stright026
+    100016: rail stright073
+    100018: rail stright074
+    100020: rail stright075
+    100022: rail stright077
+    100024: rail stright078
+    100026: rail stright079
+    100028: rail stright080
+    100030: rail stright082
+    100032: rail stright083
+    100034: //RootNode
+    400000: Object079
+    400002: Object080
+    400004: Object081
+    400006: Object089
+    400008: Object090
+    400010: Object091
+    400012: rail strigh-perfect010
+    400014: rail stright026
+    400016: rail stright073
+    400018: rail stright074
+    400020: rail stright075
+    400022: rail stright077
+    400024: rail stright078
+    400026: rail stright079
+    400028: rail stright080
+    400030: rail stright082
+    400032: rail stright083
+    400034: //RootNode
+    2300000: Object079
+    2300002: Object080
+    2300004: Object081
+    2300006: Object089
+    2300008: Object090
+    2300010: Object091
+    2300012: rail strigh-perfect010
+    2300014: rail stright026
+    2300016: rail stright073
+    2300018: rail stright074
+    2300020: rail stright075
+    2300022: rail stright077
+    2300024: rail stright078
+    2300026: rail stright079
+    2300028: rail stright080
+    2300030: rail stright082
+    2300032: rail stright083
+    3300000: Object079
+    3300002: Object080
+    3300004: Object081
+    3300006: Object089
+    3300008: Object090
+    3300010: Object091
+    3300012: rail strigh-perfect010
+    3300014: rail stright026
+    3300016: rail stright073
+    3300018: rail stright074
+    3300020: rail stright075
+    3300022: rail stright077
+    3300024: rail stright078
+    3300026: rail stright079
+    3300028: rail stright080
+    3300030: rail stright082
+    3300032: rail stright083
+    4300000: rail stright026
+    4300002: Object079
+    4300004: Object080
+    4300006: Object081
+    4300008: rail strigh-perfect010
+    4300010: rail stright073
+    4300012: rail stright074
+    4300014: rail stright075
+    4300016: rail stright077
+    4300018: rail stright078
+    4300020: rail stright079
+    4300022: rail stright080
+    4300024: rail stright082
+    4300026: rail stright083
+    4300028: Object089
+    4300030: Object090
+    4300032: Object091
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
