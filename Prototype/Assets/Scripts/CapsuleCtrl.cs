@@ -15,6 +15,9 @@ public class CapsuleCtrl : MonoBehaviour {
 
     public float delay = 0.1f;
     public float nextSave = 0.0f;
+
+    //객차 액셀, 브레이크 속도.
+    public float speed = 15.0f;
     
 
     //void Start () {
@@ -32,11 +35,34 @@ public class CapsuleCtrl : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         //rigidbody.constraints = RigidbodyConstraints.FreezeRotationZ;
-        
 
-        //x = tr.eulerAngles.x - prevTr.eulerAngles.x;
-        //y = tr.eulerAngles.y - prevTr.eulerAngles.y;
-        //z = tr.eulerAngles.z - prevTr.eulerAngles.z;
+
+        if (Input.GetKey("space"))
+        {
+            //로컬좌표기준 힘을 가함.
+            rigidbody.AddForce(transform.up * speed);
+            //rigidbody.AddRelativeForce(Vector3.forward * speed);
+
+            //전역좌표기준 힘을 가함.
+            //rigidbody.AddForce (Vector3.forward * speed);
+        }
+        else if (Input.GetKey("b"))
+        {
+            //로컬좌표기준 힘을 가함.
+            rigidbody.AddForce(transform.up * (-speed));
+            //rigidbody.AddRelativeForce(Vector3.forward * speed);
+
+            //전역좌표기준 힘을 가함.
+            //rigidbody.AddForce (Vector3.forward * speed);
+        }
+        else if (Input.GetKey("a"))
+        {
+            tr.Rotate(new Vector3(0, 1, 0));
+        }
+        else if (Input.GetKey("d"))
+        {
+            tr.Rotate(new Vector3(0, -1, 0));
+        }
 
 
         //급격한 각도 변화 제한.
@@ -56,14 +82,7 @@ public class CapsuleCtrl : MonoBehaviour {
             z = tr.eulerAngles.z - prevZ;
 
 
-        if (Input.GetKey("a"))
-        {
-            tr.Rotate(new Vector3(0,1,0));
-        }
-        else if(Input.GetKey("d"))
-        {
-            tr.Rotate(new Vector3(0, -1, 0));
-        }
+        
 
         /*
         //기울지는않지만 너무 자주 Rotate하는 바람에 느려짐.
