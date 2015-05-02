@@ -17,7 +17,7 @@ public class CapsuleCtrl : MonoBehaviour {
     public float nextSave = 0.0f;
 
     //객차 액셀, 브레이크 속도.
-    public float speed = 15.0f;
+    public float speed = 500.0f;
     
 
     //void Start () {
