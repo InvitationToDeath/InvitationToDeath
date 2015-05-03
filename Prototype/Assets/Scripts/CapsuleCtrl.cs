@@ -4,11 +4,15 @@ using System.Collections;
 public class CapsuleCtrl : MonoBehaviour {
 
 	// Use this for initialization
+    //private Transform prevTr;
     private Transform tr;
 
     private Transform leftWing;
     private Transform rightWing;
-    //private Transform prevTr;
+
+    private int count = 0;
+
+    
 
     public float x, y, z;
     public float prevX, prevY, prevZ;
@@ -18,8 +22,8 @@ public class CapsuleCtrl : MonoBehaviour {
 
     //객차 액셀, 브레이크 속도.
     public float speed = 500.0f;
+    public bool rotatingRail = false;
     
-
     //void Start () {
         
     //}
@@ -31,6 +35,7 @@ public class CapsuleCtrl : MonoBehaviour {
         leftWing = GameObject.FindGameObjectWithTag("LEFTWING").transform;
         //prevTr = tr;
     }
+
 	
 	// Update is called once per frame
 	void Update () {
@@ -64,23 +69,24 @@ public class CapsuleCtrl : MonoBehaviour {
             tr.Rotate(new Vector3(0, -1, 0));
         }
 
+        if (rotatingRail == false)
+        {
+            //급격한 각도 변화 제한.
+            if (30 <= tr.eulerAngles.x - prevX || tr.eulerAngles.x - prevX <= -30)
+                ;
+            else
+                x = tr.eulerAngles.x - prevX;
 
-        //급격한 각도 변화 제한.
-        if (30 <= tr.eulerAngles.x - prevX || tr.eulerAngles.x - prevX <= -30)
-            ;
-        else
-            x = tr.eulerAngles.x - prevX;
+            if (30 <= tr.eulerAngles.y - prevY || tr.eulerAngles.y - prevY <= -30)
+                ;
+            else
+                y = tr.eulerAngles.y - prevY;
 
-        if (30 <= tr.eulerAngles.y - prevY || tr.eulerAngles.y - prevY <= -30)
-            ;
-        else
-            y = tr.eulerAngles.y - prevY;
-
-        if (30 <= tr.eulerAngles.z - prevZ || tr.eulerAngles.z - prevZ <= -30)
-            ;
-        else
-            z = tr.eulerAngles.z - prevZ;
-
+            if (30 <= tr.eulerAngles.z - prevZ || tr.eulerAngles.z - prevZ <= -30)
+                ;
+            else
+                z = tr.eulerAngles.z - prevZ;
+        }
 
         
 
@@ -98,17 +104,28 @@ public class CapsuleCtrl : MonoBehaviour {
         }
         */
 
-        //만약 왼쪽으로 기울었다면
-        if ( 0.1f <= (rightWing.position.y - leftWing.position.y) )
+        if (rotatingRail == false)
         {
-            tr.Rotate(new Vector3(0, -0.6f, 0));
+            //만약 왼쪽으로 기울었다면
+            if (0.1f <= (rightWing.position.y - leftWing.position.y))
+            {
+                tr.Rotate(new Vector3(0, -0.6f, 0));
+            }
+            ////오른쪽으로 기울었다면
+            else if (0.1f <= (leftWing.position.y - rightWing.position.y))
+            {
+                tr.Rotate(new Vector3(0, 0.6f, 0));
+            }
         }
-        ////오른쪽으로 기울었다면
-        else if ( 0.1f <= (leftWing.position.y - rightWing.position.y) )
+        if (rotatingRail == true)
         {
-            tr.Rotate(new Vector3(0, 0.6f, 0));
+            if (count == 0)
+            {
+                tr.Rotate(new Vector3(0, 15.0f, 0));
+                count++;
+            }
+            
         }
-
 
         Debug.Log(rightWing.position.y.ToString() + "\t" + leftWing.position.y.ToString());
 
@@ -145,7 +162,14 @@ public class CapsuleCtrl : MonoBehaviour {
         {
             tr.rigidbody.AddForce(tr.transform.up * 340);
             //Destroy(coll.gameObject);
-
+        }
+        if(coll.gameObject.tag == "ROTATE")
+        {
+            if (rotatingRail == true)
+                rotatingRail = false;
+            else
+                rotatingRail = true;
+           
         }
     }
 
