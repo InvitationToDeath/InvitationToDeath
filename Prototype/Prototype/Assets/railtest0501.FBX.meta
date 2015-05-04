@@ -1,0 +1,291 @@
+fileFormatVersion: 2
+guid: ed93e85e86e4a1e4d9f639e2f000f48e
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Cylinder002
+    100002: Cylinder004
+    100004: Cylinder005
+    100006: Cylinder009
+    100008: Cylinder010
+    100010: Cylinder017
+    100012: Cylinder026
+    100014: Cylinder034
+    100016: Cylinder036
+    100018: Cylinder037
+    100020: Cylinder038
+    100022: Cylinder040
+    100024: Cylinder041
+    100026: Cylinder042
+    100028: Cylinder043
+    100030: Cylinder044
+    100032: Cylinder046
+    100034: Cylinder047
+    100036: Cylinder048
+    100038: Object079
+    100040: Object080
+    100042: Object095
+    100044: Object096
+    100046: Object097
+    100048: Object098
+    100050: rail strigh-perfect010
+    100052: rail stright072
+    100054: rail stright073
+    100056: rail stright077
+    100058: rail stright078
+    100060: rail stright079
+    100062: rail stright089
+    100064: rail stright092
+    100066: rail stright093
+    100068: rail stright094
+    100070: rail stright105
+    100072: rail stright107
+    100074: rail stright108
+    100076: //RootNode
+    400000: Cylinder002
+    400002: Cylinder004
+    400004: Cylinder005
+    400006: Cylinder009
+    400008: Cylinder010
+    400010: Cylinder017
+    400012: Cylinder026
+    400014: Cylinder034
+    400016: Cylinder036
+    400018: Cylinder037
+    400020: Cylinder038
+    400022: Cylinder040
+    400024: Cylinder041
+    400026: Cylinder042
+    400028: Cylinder043
+    400030: Cylinder044
+    400032: Cylinder046
+    400034: Cylinder047
+    400036: Cylinder048
+    400038: Object079
+    400040: Object080
+    400042: Object095
+    400044: Object096
+    400046: Object097
+    400048: Object098
+    400050: rail strigh-perfect010
+    400052: rail stright072
+    400054: rail stright073
+    400056: rail stright077
+    400058: rail stright078
+    400060: rail stright079
+    400062: rail stright089
+    400064: rail stright092
+    400066: rail stright093
+    400068: rail stright094
+    400070: rail stright105
+    400072: rail stright107
+    400074: rail stright108
+    400076: //RootNode
+    2300000: Cylinder002
+    2300002: Cylinder004
+    2300004: Cylinder005
+    2300006: Cylinder009
+    2300008: Cylinder010
+    2300010: Cylinder017
+    2300012: Cylinder026
+    2300014: Cylinder034
+    2300016: Cylinder036
+    2300018: Cylinder037
+    2300020: Cylinder038
+    2300022: Cylinder040
+    2300024: Cylinder041
+    2300026: Cylinder042
+    2300028: Cylinder043
+    2300030: Cylinder044
+    2300032: Cylinder046
+    2300034: Cylinder047
+    2300036: Cylinder048
+    2300038: Object079
+    2300040: Object080
+    2300042: Object095
+    2300044: Object096
+    2300046: Object097
+    2300048: Object098
+    2300050: rail strigh-perfect010
+    2300052: rail stright072
+    2300054: rail stright073
+    2300056: rail stright077
+    2300058: rail stright078
+    2300060: rail stright079
+    2300062: rail stright089
+    2300064: rail stright092
+    2300066: rail stright093
+    2300068: rail stright094
+    2300070: rail stright105
+    2300072: rail stright107
+    2300074: rail stright108
+    3300000: Cylinder002
+    3300002: Cylinder004
+    3300004: Cylinder005
+    3300006: Cylinder009
+    3300008: Cylinder010
+    3300010: Cylinder017
+    3300012: Cylinder026
+    3300014: Cylinder034
+    3300016: Cylinder036
+    3300018: Cylinder037
+    3300020: Cylinder038
+    3300022: Cylinder040
+    3300024: Cylinder041
+    3300026: Cylinder042
+    3300028: Cylinder043
+    3300030: Cylinder044
+    3300032: Cylinder046
+    3300034: Cylinder047
+    3300036: Cylinder048
+    3300038: Object079
+    3300040: Object080
+    3300042: Object095
+    3300044: Object096
+    3300046: Object097
+    3300048: Object098
+    3300050: rail strigh-perfect010
+    3300052: rail stright072
+    3300054: rail stright073
+    3300056: rail stright077
+    3300058: rail stright078
+    3300060: rail stright079
+    3300062: rail stright089
+    3300064: rail stright092
+    3300066: rail stright093
+    3300068: rail stright094
+    3300070: rail stright105
+    3300072: rail stright107
+    3300074: rail stright108
+    4300000: Object079
+    4300002: Cylinder002
+    4300004: Object080
+    4300006: Cylinder004
+    4300008: rail stright072
+    4300010: Cylinder017
+    4300012: rail strigh-perfect010
+    4300014: Cylinder009
+    4300016: rail stright073
+    4300018: Cylinder010
+    4300020: rail stright077
+    4300022: Cylinder038
+    4300024: rail stright078
+    4300026: Cylinder037
+    4300028: rail stright079
+    4300030: Cylinder036
+    4300032: Object095
+    4300034: Cylinder005
+    4300036: Object096
+    4300038: Cylinder026
+    4300040: rail stright089
+    4300042: Cylinder034
+    4300044: rail stright092
+    4300046: Cylinder040
+    4300048: rail stright093
+    4300050: Cylinder041
+    4300052: Object097
+    4300054: Cylinder042
+    4300056: Object098
+    4300058: Cylinder043
+    4300060: rail stright094
+    4300062: Cylinder044
+    4300064: rail stright105
+    4300066: Cylinder046
+    4300068: rail stright107
+    4300070: Cylinder047
+    4300072: rail stright108
+    4300074: Cylinder048
+    6400000: Cylinder002
+    6400002: Cylinder004
+    6400004: Cylinder005
+    6400006: Cylinder009
+    6400008: Cylinder010
+    6400010: Cylinder017
+    6400012: Cylinder026
+    6400014: Cylinder034
+    6400016: Cylinder036
+    6400018: Cylinder037
+    6400020: Cylinder038
+    6400022: Cylinder040
+    6400024: Cylinder041
+    6400026: Cylinder042
+    6400028: Cylinder043
+    6400030: Cylinder044
+    6400032: Cylinder046
+    6400034: Cylinder047
+    6400036: Cylinder048
+    6400038: Object079
+    6400040: Object080
+    6400042: Object095
+    6400044: Object096
+    6400046: Object097
+    6400048: Object098
+    6400050: rail strigh-perfect010
+    6400052: rail stright072
+    6400054: rail stright073
+    6400056: rail stright077
+    6400058: rail stright078
+    6400060: rail stright079
+    6400062: rail stright089
+    6400064: rail stright092
+    6400066: rail stright093
+    6400068: rail stright094
+    6400070: rail stright105
+    6400072: rail stright107
+    6400074: rail stright108
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

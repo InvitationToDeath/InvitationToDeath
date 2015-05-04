@@ -1,0 +1,502 @@
+fileFormatVersion: 2
+guid: a7908c5b417033c42a6e6d8be0f76f91
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Object063
+    100002: Object064
+    100004: Object065
+    100006: Object066
+    100008: Object067
+    100010: Object068
+    100012: Object069
+    100014: Object070
+    100016: Object071
+    100018: Object072
+    100020: Object073
+    100022: Object074
+    100024: Object075
+    100026: Object076
+    100028: Object083
+    100030: Object084
+    100032: Object085
+    100034: Object086
+    100036: Object087
+    100038: Object088
+    100040: Object089
+    100042: Object090
+    100044: Object091
+    100046: Object092
+    100048: Object093
+    100050: Object094
+    100052: Object095
+    100054: Object096
+    100056: rail strigh-perfect008
+    100058: rail strigh-perfect009
+    100060: rail strigh-perfect010
+    100062: rail strigh-perfect011
+    100064: rail strigh-perfect012
+    100066: rail strigh-perfect013
+    100068: rail strigh-perfect014
+    100070: rail strigh-perfect015
+    100072: rail strigh-perfect016
+    100074: rail strigh-perfect017
+    100076: rail stright027
+    100078: rail stright028
+    100080: rail stright029
+    100082: rail stright035
+    100084: rail stright036
+    100086: rail stright037
+    100088: rail stright038
+    100090: rail stright039
+    100092: rail stright040
+    100094: rail stright041
+    100096: rail stright042
+    100098: rail stright043
+    100100: rail stright044
+    100102: rail stright045
+    100104: rail stright046
+    100106: rail stright047
+    100108: rail stright048
+    100110: rail stright050
+    100112: rail stright051
+    100114: rail stright052
+    100116: rail stright053
+    100118: rail stright054
+    100120: rail stright057
+    100122: rail stright058
+    100124: rail stright059
+    100126: rail stright062
+    100128: rail stright063
+    100130: rail stright064
+    100132: rail stright065
+    100134: rail stright067
+    100136: rail stright068
+    100138: rail stright069
+    100140: rail stright070
+    100142: rail stright071
+    100144: rail stright072
+    100146: rail stright073
+    100148: rail stright074
+    100150: rail stright075
+    100152: rail stright076
+    100154: rail stright077
+    100156: rail stright078
+    100158: rail stright079
+    100160: rail stright080
+    100162: rail stright081
+    100164: rail stright082
+    100166: rail stright083
+    100168: rail stright084
+    100170: rail stright085
+    100172: rail stright086
+    100174: rail stright087
+    100176: //RootNode
+    400000: Object063
+    400002: Object064
+    400004: Object065
+    400006: Object066
+    400008: Object067
+    400010: Object068
+    400012: Object069
+    400014: Object070
+    400016: Object071
+    400018: Object072
+    400020: Object073
+    400022: Object074
+    400024: Object075
+    400026: Object076
+    400028: Object083
+    400030: Object084
+    400032: Object085
+    400034: Object086
+    400036: Object087
+    400038: Object088
+    400040: Object089
+    400042: Object090
+    400044: Object091
+    400046: Object092
+    400048: Object093
+    400050: Object094
+    400052: Object095
+    400054: Object096
+    400056: rail strigh-perfect008
+    400058: rail strigh-perfect009
+    400060: rail strigh-perfect010
+    400062: rail strigh-perfect011
+    400064: rail strigh-perfect012
+    400066: rail strigh-perfect013
+    400068: rail strigh-perfect014
+    400070: rail strigh-perfect015
+    400072: rail strigh-perfect016
+    400074: rail strigh-perfect017
+    400076: rail stright027
+    400078: rail stright028
+    400080: rail stright029
+    400082: rail stright035
+    400084: rail stright036
+    400086: rail stright037
+    400088: rail stright038
+    400090: rail stright039
+    400092: rail stright040
+    400094: rail stright041
+    400096: rail stright042
+    400098: rail stright043
+    400100: rail stright044
+    400102: rail stright045
+    400104: rail stright046
+    400106: rail stright047
+    400108: rail stright048
+    400110: rail stright050
+    400112: rail stright051
+    400114: rail stright052
+    400116: rail stright053
+    400118: rail stright054
+    400120: rail stright057
+    400122: rail stright058
+    400124: rail stright059
+    400126: rail stright062
+    400128: rail stright063
+    400130: rail stright064
+    400132: rail stright065
+    400134: rail stright067
+    400136: rail stright068
+    400138: rail stright069
+    400140: rail stright070
+    400142: rail stright071
+    400144: rail stright072
+    400146: rail stright073
+    400148: rail stright074
+    400150: rail stright075
+    400152: rail stright076
+    400154: rail stright077
+    400156: rail stright078
+    400158: rail stright079
+    400160: rail stright080
+    400162: rail stright081
+    400164: rail stright082
+    400166: rail stright083
+    400168: rail stright084
+    400170: rail stright085
+    400172: rail stright086
+    400174: rail stright087
+    400176: //RootNode
+    2300000: Object063
+    2300002: Object064
+    2300004: Object065
+    2300006: Object066
+    2300008: Object067
+    2300010: Object068
+    2300012: Object069
+    2300014: Object070
+    2300016: Object071
+    2300018: Object072
+    2300020: Object073
+    2300022: Object074
+    2300024: Object075
+    2300026: Object076
+    2300028: Object083
+    2300030: Object084
+    2300032: Object085
+    2300034: Object086
+    2300036: Object087
+    2300038: Object088
+    2300040: Object089
+    2300042: Object090
+    2300044: Object091
+    2300046: Object092
+    2300048: Object093
+    2300050: Object094
+    2300052: Object095
+    2300054: Object096
+    2300056: rail strigh-perfect008
+    2300058: rail strigh-perfect009
+    2300060: rail strigh-perfect010
+    2300062: rail strigh-perfect011
+    2300064: rail strigh-perfect012
+    2300066: rail strigh-perfect013
+    2300068: rail strigh-perfect014
+    2300070: rail strigh-perfect015
+    2300072: rail strigh-perfect016
+    2300074: rail strigh-perfect017
+    2300076: rail stright027
+    2300078: rail stright028
+    2300080: rail stright029
+    2300082: rail stright035
+    2300084: rail stright036
+    2300086: rail stright037
+    2300088: rail stright038
+    2300090: rail stright039
+    2300092: rail stright040
+    2300094: rail stright041
+    2300096: rail stright042
+    2300098: rail stright043
+    2300100: rail stright044
+    2300102: rail stright045
+    2300104: rail stright046
+    2300106: rail stright047
+    2300108: rail stright048
+    2300110: rail stright050
+    2300112: rail stright051
+    2300114: rail stright052
+    2300116: rail stright053
+    2300118: rail stright054
+    2300120: rail stright057
+    2300122: rail stright058
+    2300124: rail stright059
+    2300126: rail stright062
+    2300128: rail stright063
+    2300130: rail stright064
+    2300132: rail stright065
+    2300134: rail stright067
+    2300136: rail stright068
+    2300138: rail stright069
+    2300140: rail stright070
+    2300142: rail stright071
+    2300144: rail stright072
+    2300146: rail stright073
+    2300148: rail stright074
+    2300150: rail stright075
+    2300152: rail stright076
+    2300154: rail stright077
+    2300156: rail stright078
+    2300158: rail stright079
+    2300160: rail stright080
+    2300162: rail stright081
+    2300164: rail stright082
+    2300166: rail stright083
+    2300168: rail stright084
+    2300170: rail stright085
+    2300172: rail stright086
+    2300174: rail stright087
+    3300000: Object063
+    3300002: Object064
+    3300004: Object065
+    3300006: Object066
+    3300008: Object067
+    3300010: Object068
+    3300012: Object069
+    3300014: Object070
+    3300016: Object071
+    3300018: Object072
+    3300020: Object073
+    3300022: Object074
+    3300024: Object075
+    3300026: Object076
+    3300028: Object083
+    3300030: Object084
+    3300032: Object085
+    3300034: Object086
+    3300036: Object087
+    3300038: Object088
+    3300040: Object089
+    3300042: Object090
+    3300044: Object091
+    3300046: Object092
+    3300048: Object093
+    3300050: Object094
+    3300052: Object095
+    3300054: Object096
+    3300056: rail strigh-perfect008
+    3300058: rail strigh-perfect009
+    3300060: rail strigh-perfect010
+    3300062: rail strigh-perfect011
+    3300064: rail strigh-perfect012
+    3300066: rail strigh-perfect013
+    3300068: rail strigh-perfect014
+    3300070: rail strigh-perfect015
+    3300072: rail strigh-perfect016
+    3300074: rail strigh-perfect017
+    3300076: rail stright027
+    3300078: rail stright028
+    3300080: rail stright029
+    3300082: rail stright035
+    3300084: rail stright036
+    3300086: rail stright037
+    3300088: rail stright038
+    3300090: rail stright039
+    3300092: rail stright040
+    3300094: rail stright041
+    3300096: rail stright042
+    3300098: rail stright043
+    3300100: rail stright044
+    3300102: rail stright045
+    3300104: rail stright046
+    3300106: rail stright047
+    3300108: rail stright048
+    3300110: rail stright050
+    3300112: rail stright051
+    3300114: rail stright052
+    3300116: rail stright053
+    3300118: rail stright054
+    3300120: rail stright057
+    3300122: rail stright058
+    3300124: rail stright059
+    3300126: rail stright062
+    3300128: rail stright063
+    3300130: rail stright064
+    3300132: rail stright065
+    3300134: rail stright067
+    3300136: rail stright068
+    3300138: rail stright069
+    3300140: rail stright070
+    3300142: rail stright071
+    3300144: rail stright072
+    3300146: rail stright073
+    3300148: rail stright074
+    3300150: rail stright075
+    3300152: rail stright076
+    3300154: rail stright077
+    3300156: rail stright078
+    3300158: rail stright079
+    3300160: rail stright080
+    3300162: rail stright081
+    3300164: rail stright082
+    3300166: rail stright083
+    3300168: rail stright084
+    3300170: rail stright085
+    3300172: rail stright086
+    3300174: rail stright087
+    4300000: rail strigh-perfect008
+    4300002: rail stright027
+    4300004: rail stright028
+    4300006: rail stright029
+    4300008: rail stright035
+    4300010: rail stright036
+    4300012: rail stright037
+    4300014: rail stright038
+    4300016: rail strigh-perfect009
+    4300018: rail stright039
+    4300020: Object063
+    4300022: Object064
+    4300024: Object065
+    4300026: Object066
+    4300028: Object067
+    4300030: Object068
+    4300032: Object069
+    4300034: Object070
+    4300036: rail strigh-perfect010
+    4300038: rail stright040
+    4300040: rail stright041
+    4300042: rail stright042
+    4300044: rail stright043
+    4300046: rail stright044
+    4300048: rail stright045
+    4300050: rail strigh-perfect011
+    4300052: rail strigh-perfect012
+    4300054: rail strigh-perfect013
+    4300056: rail stright046
+    4300058: rail stright047
+    4300060: rail stright048
+    4300062: rail strigh-perfect014
+    4300064: rail strigh-perfect015
+    4300066: rail stright050
+    4300068: rail strigh-perfect016
+    4300070: Object071
+    4300072: Object072
+    4300074: Object073
+    4300076: Object074
+    4300078: Object075
+    4300080: Object076
+    4300082: rail stright051
+    4300084: rail stright052
+    4300086: rail stright053
+    4300088: rail stright054
+    4300090: rail stright057
+    4300092: rail strigh-perfect017
+    4300094: rail stright058
+    4300096: rail stright059
+    4300098: rail stright062
+    4300100: rail stright063
+    4300102: rail stright064
+    4300104: rail stright065
+    4300106: rail stright067
+    4300108: rail stright068
+    4300110: rail stright069
+    4300112: rail stright070
+    4300114: rail stright071
+    4300116: rail stright072
+    4300118: rail stright073
+    4300120: rail stright074
+    4300122: rail stright075
+    4300124: rail stright076
+    4300126: rail stright077
+    4300128: rail stright078
+    4300130: rail stright079
+    4300132: rail stright080
+    4300134: Object083
+    4300136: Object084
+    4300138: Object085
+    4300140: Object086
+    4300142: Object087
+    4300144: Object088
+    4300146: Object089
+    4300148: Object090
+    4300150: rail stright081
+    4300152: rail stright082
+    4300154: Object091
+    4300156: Object092
+    4300158: Object093
+    4300160: Object094
+    4300162: Object095
+    4300164: Object096
+    4300166: rail stright083
+    4300168: rail stright084
+    4300170: rail stright085
+    4300172: rail stright086
+    4300174: rail stright087
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
