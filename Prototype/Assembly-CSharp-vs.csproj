@@ -63,6 +63,7 @@
      <Compile Include="Assets\OVR\Scripts\OVRUtils.cs" />
      <Compile Include="Assets\Scripts\BulletFire.cs" />
      <Compile Include="Assets\Scripts\CapsuleCtrl.cs" />
+     <Compile Include="Assets\Scripts\CrossCtrl.cs" />
      <Compile Include="Assets\Scripts\DevilCtrl.cs" />
      <Compile Include="Assets\Scripts\GuiManager.cs" />
      <Compile Include="Assets\Scripts\Network.cs" />

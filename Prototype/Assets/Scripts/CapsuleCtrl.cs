@@ -160,7 +160,7 @@ public class CapsuleCtrl : MonoBehaviour {
     {
         if (coll.gameObject.tag == "ADDFORCE")
         {
-            tr.rigidbody.AddForce(tr.transform.up * 340);
+            tr.rigidbody.AddForce(tr.transform.up * 350);
             //Destroy(coll.gameObject);
         }
         if(coll.gameObject.tag == "ROTATE")
