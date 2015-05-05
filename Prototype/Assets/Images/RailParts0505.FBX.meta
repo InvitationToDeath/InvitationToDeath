@@ -1,0 +1,253 @@
+fileFormatVersion: 2
+guid: d6307151b42e3f141a79c022d4618f0c
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Cylinder009
+    100002: Cylinder010
+    100004: Cylinder017
+    100006: Cylinder026
+    100008: Cylinder040
+    100010: Cylinder041
+    100012: Cylinder042
+    100014: Cylinder043
+    100016: Cylinder047
+    100018: Cylinder048
+    100020: Cylinder054
+    100022: Cylinder055
+    100024: Cylinder056
+    100026: Cylinder057
+    100028: Cylinder058
+    100030: Cylinder059
+    100032: Cylinder060
+    100034: Cylinder061
+    100036: Cylinder062
+    100038: Object096
+    100040: Object097
+    100042: Object098
+    100044: Object110
+    100046: Object111
+    100048: rail strigh-perfect010
+    100050: rail stright072
+    100052: rail stright073
+    100054: rail stright092
+    100056: rail stright093
+    100058: rail stright094
+    100060: rail stright107
+    100062: rail stright108
+    100064: rail stright111
+    100066: rail stright112
+    100068: rail stright113
+    100070: rail stright114
+    100072: rail stright115
+    100074: //RootNode
+    100076: Y-L-22.5
+    400000: Cylinder009
+    400002: Cylinder010
+    400004: Cylinder017
+    400006: Cylinder026
+    400008: Cylinder040
+    400010: Cylinder041
+    400012: Cylinder042
+    400014: Cylinder043
+    400016: Cylinder047
+    400018: Cylinder048
+    400020: Cylinder054
+    400022: Cylinder055
+    400024: Cylinder056
+    400026: Cylinder057
+    400028: Cylinder058
+    400030: Cylinder059
+    400032: Cylinder060
+    400034: Cylinder061
+    400036: Cylinder062
+    400038: Object096
+    400040: Object097
+    400042: Object098
+    400044: Object110
+    400046: Object111
+    400048: rail strigh-perfect010
+    400050: rail stright072
+    400052: rail stright073
+    400054: rail stright092
+    400056: rail stright093
+    400058: rail stright094
+    400060: rail stright107
+    400062: rail stright108
+    400064: rail stright111
+    400066: rail stright112
+    400068: rail stright113
+    400070: rail stright114
+    400072: rail stright115
+    400074: //RootNode
+    400076: Y-L-22.5
+    2300000: Cylinder009
+    2300002: Cylinder010
+    2300004: Cylinder017
+    2300006: Cylinder026
+    2300008: Cylinder040
+    2300010: Cylinder041
+    2300012: Cylinder042
+    2300014: Cylinder043
+    2300016: Cylinder047
+    2300018: Cylinder048
+    2300020: Cylinder054
+    2300022: Cylinder055
+    2300024: Cylinder056
+    2300026: Cylinder057
+    2300028: Cylinder058
+    2300030: Cylinder059
+    2300032: Cylinder060
+    2300034: Cylinder061
+    2300036: Cylinder062
+    2300038: Object096
+    2300040: Object097
+    2300042: Object098
+    2300044: Object110
+    2300046: Object111
+    2300048: rail strigh-perfect010
+    2300050: rail stright072
+    2300052: rail stright073
+    2300054: rail stright092
+    2300056: rail stright093
+    2300058: rail stright094
+    2300060: rail stright107
+    2300062: rail stright108
+    2300064: rail stright111
+    2300066: rail stright112
+    2300068: rail stright113
+    2300070: rail stright114
+    2300072: rail stright115
+    2300074: Y-L-22.5
+    3300000: Cylinder009
+    3300002: Cylinder010
+    3300004: Cylinder017
+    3300006: Cylinder026
+    3300008: Cylinder040
+    3300010: Cylinder041
+    3300012: Cylinder042
+    3300014: Cylinder043
+    3300016: Cylinder047
+    3300018: Cylinder048
+    3300020: Cylinder054
+    3300022: Cylinder055
+    3300024: Cylinder056
+    3300026: Cylinder057
+    3300028: Cylinder058
+    3300030: Cylinder059
+    3300032: Cylinder060
+    3300034: Cylinder061
+    3300036: Cylinder062
+    3300038: Object096
+    3300040: Object097
+    3300042: Object098
+    3300044: Object110
+    3300046: Object111
+    3300048: rail strigh-perfect010
+    3300050: rail stright072
+    3300052: rail stright073
+    3300054: rail stright092
+    3300056: rail stright093
+    3300058: rail stright094
+    3300060: rail stright107
+    3300062: rail stright108
+    3300064: rail stright111
+    3300066: rail stright112
+    3300068: rail stright113
+    3300070: rail stright114
+    3300072: rail stright115
+    3300074: Y-L-22.5
+    4300000: rail stright072
+    4300002: Cylinder017
+    4300004: rail strigh-perfect010
+    4300006: Cylinder009
+    4300008: rail stright073
+    4300010: Cylinder010
+    4300012: Object096
+    4300014: Cylinder026
+    4300016: rail stright092
+    4300018: Cylinder040
+    4300020: rail stright093
+    4300022: Cylinder041
+    4300024: Object097
+    4300026: Cylinder042
+    4300028: Object098
+    4300030: Cylinder043
+    4300032: rail stright094
+    4300034: Cylinder054
+    4300036: rail stright107
+    4300038: Cylinder047
+    4300040: rail stright108
+    4300042: Cylinder048
+    4300044: rail stright111
+    4300046: Cylinder055
+    4300048: Y-L-22.5
+    4300050: Cylinder056
+    4300052: Object110
+    4300054: Cylinder057
+    4300056: rail stright112
+    4300058: Cylinder058
+    4300060: rail stright113
+    4300062: Cylinder059
+    4300064: rail stright114
+    4300066: Cylinder060
+    4300068: rail stright115
+    4300070: Cylinder061
+    4300072: Object111
+    4300074: Cylinder062
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
