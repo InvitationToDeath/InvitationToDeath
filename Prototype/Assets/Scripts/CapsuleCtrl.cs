@@ -18,6 +18,7 @@ public class CapsuleCtrl : MonoBehaviour {
 
     //지속적인 Addforce bool 변수.
     public bool addForce;
+    public float addForceSpeed = 2200.0f;
 
     private int count = 0;
     
@@ -27,7 +28,7 @@ public class CapsuleCtrl : MonoBehaviour {
     public float prevX, prevY, prevZ;
 
     public float delay = 0.1f;
-    public float nextSave = 0.0f;
+    private float nextSave = 0.0f;
 
     //객차 액셀, 브레이크 속도.
     public float speed = 20.0f;
@@ -79,7 +80,7 @@ public class CapsuleCtrl : MonoBehaviour {
         }
 
         if(true == addForce)
-            rigidbody.AddForce(transform.up * 40);
+            rigidbody.AddForce(transform.up * addForceSpeed * Time.deltaTime); //시간의 개념 도입 위해 Time.deltaTime 곱해줌.
        
 
         if (rotatingRail == false)
