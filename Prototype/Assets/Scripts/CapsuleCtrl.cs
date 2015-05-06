@@ -16,6 +16,9 @@ public class CapsuleCtrl : MonoBehaviour {
     private Transform leftWing;
     private Transform rightWing;
 
+    //지속적인 Addforce bool 변수.
+    public bool addForce;
+
     private int count = 0;
     
     //
@@ -74,6 +77,10 @@ public class CapsuleCtrl : MonoBehaviour {
         {
             tr.Rotate(new Vector3(0, -1, 0));
         }
+
+        if(true == addForce)
+            rigidbody.AddForce(transform.up * 40);
+       
 
         if (rotatingRail == false)
         {
@@ -183,7 +190,14 @@ public class CapsuleCtrl : MonoBehaviour {
                 rotatingRail = false;
             else
                 rotatingRail = true;
-           
+        }
+        if(coll.gameObject.tag == "ADDFORCE_START")
+        {
+            addForce = true;
+        }
+        else if(coll.gameObject.tag == "ADDFORCE_END")
+        {
+            addForce = false;
         }
     }
 
