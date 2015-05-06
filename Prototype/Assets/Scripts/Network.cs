@@ -28,7 +28,6 @@ public class Network : MonoBehaviour
 {
 
     private float temp;
-
     private Transform player;
 
     public struct SocketTest
@@ -36,6 +35,7 @@ public class Network : MonoBehaviour
         public float a;
         public float b;
         public float c;
+        public float d;
     }
 
     //public void Main(string[] args)
@@ -63,10 +63,13 @@ public class Network : MonoBehaviour
 
     
 
-     private const int portNum = 20777;
-    float a, b, c;
+    private const int portNum = 20777;
+    float a = 1;
+    float b, c, d;
     byte[] buffer;
     byte[] recvBuffer = new byte[1024];
+
+    SocketTest abc;
 
     IPEndPoint remoteEP = new IPEndPoint(IPAddress.Loopback, portNum);
     IPEndPoint tempEP = new IPEndPoint(IPAddress.Any, 0);
@@ -82,20 +85,18 @@ public class Network : MonoBehaviour
     {
         //player = GameObject.FindWithTag("Player").GetComponent<
 
-        a = 0.1f;
-        b = 0.2f;
-        c = 0.3f;
         //SokectFloat ss = (SokectFloat)ScriptableObject.CreateInstance("SokectFloat");
     }
 
     // Update is called once per frame
     void Update()
     {
-        SocketTest abc;
+        
         //abc.a = 3.0f;
         //abc.b = 2.0f;
         //abc.c = 1.0f;
 
+        abc.d = 1;
         abc.a = GameObject.FindWithTag("Player").GetComponent<CapsuleCtrl>().x;
         abc.b = GameObject.FindWithTag("Player").GetComponent<CapsuleCtrl>().y;
         abc.c = GameObject.FindWithTag("Player").GetComponent<CapsuleCtrl>().z;
@@ -108,6 +109,10 @@ public class Network : MonoBehaviour
         //Marshal.StructureToPtr(this, (IntPtr)fixed_buffer, false);
     }
 
+    void OnApplicationQuit()
+    {
+        abc.a = 0;
+    }
 
     public static byte[] StructToByte(object st)
     {
