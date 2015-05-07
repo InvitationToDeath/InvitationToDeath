@@ -46,11 +46,6 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Editor\Water (Pro Only)\Water4\GerstnerDisplaceEditor.cs" />
-     <Compile Include="Assets\Editor\Water (Pro Only)\Water4\PlanarReflectionEditor.cs" />
-     <Compile Include="Assets\Editor\Water (Pro Only)\Water4\SpecularLightingEditor.cs" />
-     <Compile Include="Assets\Editor\Water (Pro Only)\Water4\WaterBaseEditor.cs" />
-     <Compile Include="Assets\Editor\Water (Pro Only)\Water4\WaterEditorUtility.cs" />
      <Compile Include="Assets\OVR\Editor\OVRBuild.cs" />
      <Compile Include="Assets\OVR\Editor\OVRCameraControllerEditor.cs" />
      <Compile Include="Assets\OVR\Editor\OVRDeviceEditor.cs" />
