@@ -21,6 +21,9 @@ public class CapsuleCtrl : MonoBehaviour {
     public float addForceSpeed = 2200.0f;
 
     private int count = 0;
+
+    //이동 방향과 객차의 forward 방향 벡터 사이의 각도를 저장할 변수.
+    private float betweenAngle;
     
     //
     public float x, y, z;
@@ -79,6 +82,7 @@ public class CapsuleCtrl : MonoBehaviour {
             tr.Rotate(new Vector3(0, -1, 0));
         }
 
+        //지속적인 힘 가하는 코드.
         if(true == addForce)
             rigidbody.AddForce(transform.up * addForceSpeed * Time.deltaTime); //시간의 개념 도입 위해 Time.deltaTime 곱해줌.
        
@@ -105,9 +109,22 @@ public class CapsuleCtrl : MonoBehaviour {
 
         //float dist = Vector3.Distance(tr.position,prevTr);
         //Debug.Log(dist / delay);
+
+        //이동하는 방향벡터와 객차의 forward 방향 벡터 사이의 각도를 구함
+        betweenAngle = Vector3.Angle((tr.position - prevTr), transform.up);
+
+        //Debug.Log("각도 : " + betweenAngle);
+
+
+
         Debug.Log("tr = " + tr.position.ToString() + " prevTr = " + prevTr.ToString());
 
-        Debug.Log("시속 : " + dist / delay * 3.6 + "km/h");
+        //사이 각도가 90도 이상이면 후진 중이므로.
+        if(betweenAngle > 90)
+            Debug.Log("시속 : " + -dist / delay * 3.6 + "km/h");
+        //사이 각도가 90도 이하이면 전진 중이므로. 
+        else if(betweenAngle < 90)
+            Debug.Log("시속 : " + dist / delay * 3.6 + "km/h");
 
         //Debug.Log(Vector3.Distance(new Vector3(0,0,1), new Vector3(0,0,2)));
 
@@ -212,10 +229,12 @@ public class CapsuleCtrl : MonoBehaviour {
 
             nextSave = Time.time + delay;
 
+            //이전 각도 구하는 코드.
             prevX = tr.eulerAngles.x;
             prevY = tr.eulerAngles.y;
             prevZ = tr.eulerAngles.z;
 
+            //이전 위치 구하는 코드.
             prevTr.x = tr.position.x;
             prevTr.y = tr.position.y;
             prevTr.z = tr.position.z;
