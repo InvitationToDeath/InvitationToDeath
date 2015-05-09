@@ -9,8 +9,9 @@ public class CapsuleCtrl : MonoBehaviour {
     private Transform tr;
     //delay (0.1초)전의 위치를 저장할 변수.
     private Vector3 prevTr;
-    //둘 사이의 거리를 저장할 변수.
+    //두 포지션 사이의 거리를 저장할 변수.
     private float dist;
+    private float distForYAxis;
 
     //균형을 잡기 위한 양 날개.
     private Transform leftWing;
@@ -24,6 +25,9 @@ public class CapsuleCtrl : MonoBehaviour {
 
     //이동 방향과 객차의 forward 방향 벡터 사이의 각도를 저장할 변수.
     private float betweenAngle;
+    //히브 값(y축 포지션 값만을 통한 속도 값))을 저장할 변수.
+    public float heaveVelocity;
+
     
     //
     public float x, y, z;
@@ -120,11 +124,15 @@ public class CapsuleCtrl : MonoBehaviour {
         Debug.Log("tr = " + tr.position.ToString() + " prevTr = " + prevTr.ToString());
 
         //사이 각도가 90도 이상이면 후진 중이므로.
-        if(betweenAngle > 90)
+        if(90 < betweenAngle)
             Debug.Log("시속 : " + -dist / delay * 3.6 + "km/h");
         //사이 각도가 90도 이하이면 전진 중이므로. 
         else if(betweenAngle < 90)
             Debug.Log("시속 : " + dist / delay * 3.6 + "km/h");
+
+        //현재와 이전의 y 포지션 값 사이의 차의 값이 음수라면 하강 중이라는 뜻.
+        heaveVelocity = (float)(distForYAxis / delay * 3.6);
+        Debug.Log("히브 값 : " + heaveVelocity + "km/h");
 
         //Debug.Log(Vector3.Distance(new Vector3(0,0,1), new Vector3(0,0,2)));
 
@@ -226,6 +234,7 @@ public class CapsuleCtrl : MonoBehaviour {
         {
             //0.1 초 전의 위치와의 거리 측정.
             dist = Vector3.Distance(tr.position, prevTr);
+            distForYAxis = tr.position.y - prevTr.y;
 
             nextSave = Time.time + delay;
 

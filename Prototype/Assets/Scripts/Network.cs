@@ -36,6 +36,9 @@ public class Network : MonoBehaviour
         public float b;
         public float c;
         public float d;
+        public float e;
+        public float f;
+        public float g;
     }
 
     //public void Main(string[] args)
@@ -65,7 +68,7 @@ public class Network : MonoBehaviour
 
     private const int portNum = 20777;
     float a = 1;
-    float b, c, d;
+    float b, c, d, e, f, g;
     byte[] buffer;
     byte[] recvBuffer = new byte[1024];
 
@@ -96,10 +99,13 @@ public class Network : MonoBehaviour
         //abc.b = 2.0f;
         //abc.c = 1.0f;
 
-        abc.d = 1;
-        abc.a = GameObject.FindWithTag("Player").GetComponent<CapsuleCtrl>().x;
-        abc.b = GameObject.FindWithTag("Player").GetComponent<CapsuleCtrl>().y;
-        abc.c = GameObject.FindWithTag("Player").GetComponent<CapsuleCtrl>().z;
+        abc.a = 1;
+        //abc.b
+        abc.c = GameObject.FindWithTag("Player").GetComponent<CapsuleCtrl>().x;
+        abc.d = GameObject.FindWithTag("Player").GetComponent<CapsuleCtrl>().y;
+        abc.e = GameObject.FindWithTag("Player").GetComponent<CapsuleCtrl>().z;
+        abc.f = GameObject.FindWithTag("Player").GetComponent<CapsuleCtrl>().heaveVelocity;
+        //abc.g
 
         buffer = StructToByte(abc);
         //buffer = System.BitConverter.GetBytes(abc);
