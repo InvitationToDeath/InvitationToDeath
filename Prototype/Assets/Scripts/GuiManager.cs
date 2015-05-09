@@ -18,7 +18,7 @@ public class GuiManager : MonoBehaviour {
         if (GUI.Button(new Rect(20, 20, 100, 25), "Restart"))
         {
             lastSecond = Time.time;
-            Application.LoadLevel("jeongsoover");
+            Application.LoadLevel("Rail-Cross");
         }
         //nowSecond = float.Parse(Time.time.ToString());
         //nowSecond -= lastSecond;
