@@ -1,11 +1,16 @@
 Base path: C:/Program Files (x86)/Unity/Editor/Data
+<<<<<<< HEAD
 Pipe name: \\.\pipe\UnityShaderCompiler-1-3880
+=======
+Pipe name: \\.\pipe\UnityShaderCompiler-1-5068
+>>>>>>> origin/master
 Cmd: getPlatforms
 Cmd: preprocess
   insize=5140 outsize=2085 ok=1
 Cmd: compileSnippet
   api=4 type=0 insize=3359 outsize=2087 kw=WATER_REFRACTIVE ok=1
 Cmd: compileSnippet
+<<<<<<< HEAD
   api=4 type=1 insize=3359 outsize=2875 kw=WATER_REFRACTIVE ok=1
 Cmd: preprocess
   insize=12913 outsize=2602 ok=1
@@ -35,3 +40,8 @@ Cmd: compileSnippet
   api=4 type=0 insize=9252 outsize=1835 kw= ok=1
 Cmd: compileSnippet
   api=4 type=1 insize=9252 outsize=3070 kw= ok=1
+=======
+  api=0 type=0 insize=1825 outsize=328 kw= ok=1
+Cmd: compileSnippet
+  api=0 type=1 insize=952 outsize=222 kw= ok=1
+>>>>>>> origin/master
