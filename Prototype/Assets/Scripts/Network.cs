@@ -30,15 +30,17 @@ public class Network : MonoBehaviour
     private float temp;
     private Transform player;
 
-    public struct SocketTest
+    private Vector3 position;
+    private Vector3 standardZ = new Vector3(0, 1, 0);
+
+    public struct Motion
     {
-        public float a;
-        public float b;
-        public float c;
-        public float d;
-        public float e;
-        public float f;
-        public float g;
+        public float start;
+        public float pitching;
+        public float rolling;
+        public float yawing;
+        public float heave;
+        public float rotationX;
     }
 
     //public void Main(string[] args)
@@ -72,7 +74,7 @@ public class Network : MonoBehaviour
     byte[] buffer;
     byte[] recvBuffer = new byte[1024];
 
-    SocketTest abc;
+    Motion motion;
 
     IPEndPoint remoteEP = new IPEndPoint(IPAddress.Loopback, portNum);
     IPEndPoint tempEP = new IPEndPoint(IPAddress.Any, 0);
@@ -94,20 +96,31 @@ public class Network : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        position = GameObject.FindWithTag("Player").transform.up;
         //abc.a = 3.0f;
         //abc.b = 2.0f;
         //abc.c = 1.0f;
+        motion.start = 1;
+        motion.pitching = GameObject.FindWithTag("Player").GetComponent<CapsuleCtrl>().x;
+        motion.rolling = GameObject.FindWithTag("Player").GetComponent<CapsuleCtrl>().y;
+        motion.yawing = GameObject.FindWithTag("Player").GetComponent<CapsuleCtrl>().z;
+        motion.rotationX = Vector3.Angle(standardZ, position);
+        motion.heave = GameObject.FindWithTag("Player").GetComponent<CapsuleCtrl>().heaveVelocity;
+       
+        buffer = StructToByte(motion);
+        //buffer = System.BitConverter.GetBytes(abc);
+        //System.BitConverter.GetBytes(abc);
+        //buffer = (byte*)&abc;
+        udpSocket.SendTo(buffer, remoteEP);
+        //Marshal.StructureToPtr(this, (IntPtr)fixed_buffer, false);
+        print(motion.heave);
 
-        abc.a = 1;
-        //abc.b
-        abc.c = GameObject.FindWithTag("Player").GetComponent<CapsuleCtrl>().x;
-        abc.d = GameObject.FindWithTag("Player").GetComponent<CapsuleCtrl>().y;
-        abc.e = GameObject.FindWithTag("Player").GetComponent<CapsuleCtrl>().z;
-        abc.f = GameObject.FindWithTag("Player").GetComponent<CapsuleCtrl>().heaveVelocity;
-        //abc.g
 
-        buffer = StructToByte(abc);
+
+
+       
+
+        buffer = StructToByte(motion);
         //buffer = System.BitConverter.GetBytes(abc);
         //System.BitConverter.GetBytes(abc);
         //buffer = (byte*)&abc;
@@ -117,7 +130,7 @@ public class Network : MonoBehaviour
 
     void OnApplicationQuit()
     {
-        abc.a = 0;
+        motion.start = 0;
     }
 
     public static byte[] StructToByte(object st)
