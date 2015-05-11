@@ -7,11 +7,11 @@ public class DevilCtrl : MonoBehaviour
     //혈흔 효과 프리팹.
     public GameObject bloodEffect;
     //악마 추격 속도.
-    public float monsterSpeed = 3;
+    public float monsterSpeed = 2;
     //악마 생명 변수.
     public int devilHp = 100;
     //추적 사정거리.
-    public float traceDist = 10.0f;
+    public float traceDist = 30.0f;
     //공격 사정거리.
     public float attackDist = 2.0f;
     //몬스터의 사망 여부.
