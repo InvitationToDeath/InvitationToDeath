@@ -69,8 +69,8 @@ public class Network : MonoBehaviour
     
 
     private const int portNum = 20777;
-    float a = 1;
-    float b, c, d, e, f, g;
+    //float a = 1;
+    //float b, c, d, e, f, g;
     byte[] buffer;
     byte[] recvBuffer = new byte[1024];
 
@@ -91,6 +91,9 @@ public class Network : MonoBehaviour
         //player = GameObject.FindWithTag("Player").GetComponent<
 
         //SokectFloat ss = (SokectFloat)ScriptableObject.CreateInstance("SokectFloat");
+        
+        //게임 시작 시 start값 1로 설정.
+        motion.start = 1;
     }
 
     // Update is called once per frame
@@ -100,7 +103,9 @@ public class Network : MonoBehaviour
         //abc.a = 3.0f;
         //abc.b = 2.0f;
         //abc.c = 1.0f;
-        motion.start = 1;
+        //motion.start = 1;
+
+        motion.start = Time.timeScale;
         motion.pitching = GameObject.FindWithTag("Player").GetComponent<CapsuleCtrl>().x;
         motion.rolling = GameObject.FindWithTag("Player").GetComponent<CapsuleCtrl>().y;
         motion.yawing = GameObject.FindWithTag("Player").GetComponent<CapsuleCtrl>().z;
