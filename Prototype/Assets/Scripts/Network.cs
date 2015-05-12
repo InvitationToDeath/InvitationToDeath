@@ -110,7 +110,7 @@ public class Network : MonoBehaviour
         motion.rolling = GameObject.FindWithTag("Player").GetComponent<CapsuleCtrl>().y;
         motion.yawing = GameObject.FindWithTag("Player").GetComponent<CapsuleCtrl>().z;
         motion.rotationX = Vector3.Angle(standardZ, position);
-        motion.heave = GameObject.FindWithTag("Player").GetComponent<CapsuleCtrl>().heaveVelocity;
+        motion.heave = 0; //GameObject.FindWithTag("Player").GetComponent<CapsuleCtrl>().heaveVelocity;
        
         buffer = StructToByte(motion);
         //buffer = System.BitConverter.GetBytes(abc);

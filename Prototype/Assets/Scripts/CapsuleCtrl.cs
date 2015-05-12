@@ -172,16 +172,18 @@ public class CapsuleCtrl : MonoBehaviour {
                 count++;
             }
 
+            /*
             //만약 왼쪽으로 기울었다면
-            if (0.26f <= (rightWing.position.y - leftWing.position.y))
+            if (0.258f <= (rightWing.position.y - leftWing.position.y))
             {
-                tr.Rotate(new Vector3(0, -0.6f, 0));
+                tr.Rotate(new Vector3(0, -0.2f, 0));
             }
             ////오른쪽으로 기울었다면
-            else if (0.26f <= (leftWing.position.y - rightWing.position.y))
+            else if (0.258f >= (rightWing.position.y - leftWing.position.y))
             {
-                tr.Rotate(new Vector3(0, 0.6f, 0));
+                tr.Rotate(new Vector3(0, 0.2f, 0));
             }
+            */
         }
         else if (rotatingRailRight == true)
         {
@@ -191,6 +193,7 @@ public class CapsuleCtrl : MonoBehaviour {
                 count++;
             }
 
+            /*
             //만약 왼쪽으로 기울었다면
             if (0.258f <= (leftWing.position.y - rightWing.position.y))
             {
@@ -201,6 +204,7 @@ public class CapsuleCtrl : MonoBehaviour {
             {
                 tr.Rotate(new Vector3(0, -0.2f, 0));
             }
+            */
 
         }
 
