@@ -39,7 +39,8 @@ public class CapsuleCtrl : MonoBehaviour {
 
     //객차 액셀, 브레이크 속도.
     public float speed = 20.0f;
-    public bool rotatingRail = false;
+    public bool rotatingRailLeft = false;
+    public bool rotatingRailRight = false;
     
     //void Start () {
         
@@ -91,7 +92,7 @@ public class CapsuleCtrl : MonoBehaviour {
             rigidbody.AddForce(transform.up * addForceSpeed * Time.deltaTime); //시간의 개념 도입 위해 Time.deltaTime 곱해줌.
        
 
-        if (rotatingRail == false)
+        if (rotatingRailLeft == false)
         {
             //급격한 각도 변화 제한.
             if (30 <= tr.eulerAngles.x - prevX || tr.eulerAngles.x - prevX <= -30)
@@ -150,7 +151,7 @@ public class CapsuleCtrl : MonoBehaviour {
         }
         */
 
-        if (rotatingRail == false)
+        if (rotatingRailLeft == false && rotatingRailRight == false)
         {
             //만약 왼쪽으로 기울었다면
             if (0.1f <= (rightWing.position.y - leftWing.position.y))
@@ -163,14 +164,44 @@ public class CapsuleCtrl : MonoBehaviour {
                 tr.Rotate(new Vector3(0, 0.6f, 0));
             }
         }
-        if (rotatingRail == true)
+        if (rotatingRailLeft == true)
         {
             if (count == 0)
             {
                 tr.Rotate(new Vector3(0, 15.0f, 0));
                 count++;
             }
-            
+
+            //만약 왼쪽으로 기울었다면
+            if (0.26f <= (rightWing.position.y - leftWing.position.y))
+            {
+                tr.Rotate(new Vector3(0, -0.6f, 0));
+            }
+            ////오른쪽으로 기울었다면
+            else if (0.26f <= (leftWing.position.y - rightWing.position.y))
+            {
+                tr.Rotate(new Vector3(0, 0.6f, 0));
+            }
+        }
+        else if (rotatingRailRight == true)
+        {
+            if (count == 0)
+            {
+                tr.Rotate(new Vector3(0, -15.0f, 0));
+                count++;
+            }
+
+            //만약 왼쪽으로 기울었다면
+            if (0.258f <= (leftWing.position.y - rightWing.position.y))
+            {
+                tr.Rotate(new Vector3(0, 0.2f, 0));
+            }
+            ////오른쪽으로 기울었다면
+            else if (0.258f >= (leftWing.position.y - rightWing.position.y))
+            {
+                tr.Rotate(new Vector3(0, -0.2f, 0));
+            }
+
         }
 
         Debug.Log(rightWing.position.y.ToString() + "\t" + leftWing.position.y.ToString());
@@ -210,12 +241,21 @@ public class CapsuleCtrl : MonoBehaviour {
             tr.rigidbody.AddForce(tr.transform.up * 350);
             //Destroy(coll.gameObject);
         }
-        if(coll.gameObject.tag == "ROTATE")
+
+
+        if (coll.gameObject.tag == "LEFTROTATE")
         {
-            if (rotatingRail == true)
-                rotatingRail = false;
+            if (rotatingRailLeft == true)
+                rotatingRailLeft = false;
             else
-                rotatingRail = true;
+                rotatingRailLeft = true; count = 0;
+        }
+        else if (coll.gameObject.tag == "RIGHTROTATE")
+        {
+            if (rotatingRailRight == true)
+                rotatingRailRight = false;
+            else
+                rotatingRailRight = true; count = 0;
         }
         if(coll.gameObject.tag == "ADDFORCE_START")
         {

@@ -19,15 +19,12 @@ public class GuiManager : MonoBehaviour {
 
         //Debug.Log("TimeScale : " + Time.timeScale);
         //Time.timeScale 값이 0일 때 일시정지, 1일 때 정상 게임 재생.
-        if(Input.GetKey("q"))
+        if (Input.GetKeyDown("q"))
         {
-            //일시정지
-            Time.timeScale = 0;
-        }
-        else if(Input.GetKey("w"))
-        {
-            //재시작.
-            Time.timeScale = 1;
+            if (0 == Time.timeScale)
+                Time.timeScale = 1;
+            else if (1 == Time.timeScale)
+                Time.timeScale = 0;
         }
     }
     void OnGUI()
