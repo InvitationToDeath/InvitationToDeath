@@ -1,0 +1,25 @@
+Pitch30Down : 30도 내리막
+Pitch30Up : 30도 오르막
+Pitch180L : 왼쪽으로 180도 도는
+Pitch180R : 오른쪽으로 180도 도는
+Roll15L : 직선인데 15도 왼쪽으로 roll
+Roll15R : 직선인데 15도 오른쪽으로 roll
+Straight : 직선
+Turn22.5L : 그냥 왼쪽으로 22.5도 턴
+Turn22.5R : 오른쪽
+Turn22.5Roll15L : 15도 roll상태로 22.5도 턴
+Turn22.5Roll15R : 오른쪽
+Turn30L : 그냥 왼쪽으로 30도 턴
+Turn30R : 이하 동일
+Turn30Roll15L
+Turn30Roll15R
+Turn45L
+Turn45R
+Turn45Roll15L
+Turn45Roll15R
+Yaw30Roll15Down&L&little : 15도 roll 상태로 30도 왼쪽 방향으로 yaw하면서 조금씩 하강
+Yaw30Roll15Down&L&many : 15도 roll 상태로 30도 왼쪽 방향으로 yaw하면서 조금 더 많이 하강
+Yaw30Roll15Down&R&little
+Yaw30Roll15Down&R&many
+Yaw30Roll15Up&L : 15도 roll 상태로 30도 왼쪽 방향으로 yaw하면서 상승
+Yaw30Roll15Up&R
