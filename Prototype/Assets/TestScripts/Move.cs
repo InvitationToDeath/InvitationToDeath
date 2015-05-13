@@ -21,6 +21,13 @@ public class Move : MonoBehaviour
 			this.transform.Translate (Vector3.forward * MoveSpeed * Time.deltaTime);	
 		}
 
+        //if (Input.GetKey("z"))
+        //    rigidbody.AddRelativeForce(Vector3.forward * 10.0f);
+        //if (Input.GetKey("x"))
+        //    rigidbody.AddRelativeForce(Vector3.right * 10.0f);
+        //if (Input.GetKey("y"))
+        //    rigidbody.AddRelativeForce(Vector3.up * 10.0f);
+
         if (Input.GetKey("z"))
             rigidbody.AddRelativeForce(new Vector3(0, 0, 1) * 10.0f);
         if (Input.GetKey("x"))

@@ -3,12 +3,23 @@ using System.Collections;
 
 public class CapsuleCtrl : MonoBehaviour {
 
-	// Use this for initialization
+
+    //단위 벡터.
+    private Vector3 standardX = new Vector3(1, 0, 0);
+    private Vector3 standardY = new Vector3(0, 1, 0);
+    private Vector3 standardZ = new Vector3(0, 0, 1);
 
     //캡슐의 위치를 저장할 변수.
     private Transform tr;
     //delay (0.1초)전의 위치를 저장할 변수.
     private Vector3 prevTr;
+
+    //이전 회전각도(스크립트로 구한)값을 저장할 변수.
+    private float prevPitch;
+    private float prevYaw;
+    private float prevRoll;
+
+
     //두 포지션 사이의 거리를 저장할 변수.
     private float dist;
     private float distForYAxis;
@@ -28,17 +39,18 @@ public class CapsuleCtrl : MonoBehaviour {
     //히브 값(y축 포지션 값만을 통한 속도 값))을 저장할 변수.
     public float heaveVelocity;
 
+
     
     //
-    public float x, y, z;
+    public float changeValueX, changeValueY, changeValueZ;
     //이전의 x,y,z Rotation값을 저장할 변수.
     public float prevX, prevY, prevZ;
 
-    public float delay = 0.1f;
+    public float delay = 0.25f;
     private float nextSave = 0.0f;
 
     //객차 액셀, 브레이크 속도.
-    public float speed = 20.0f;
+    private float speed = 20.0f;
     public bool rotatingRailLeft = false;
     public bool rotatingRailRight = false;
     
@@ -92,24 +104,32 @@ public class CapsuleCtrl : MonoBehaviour {
             rigidbody.AddForce(transform.up * addForceSpeed * Time.deltaTime); //시간의 개념 도입 위해 Time.deltaTime 곱해줌.
        
 
+        ////각도 변화 계산하여 대입.(스크립트로 구한 각도)
+        //changeValueX = (-Vector3.Angle(standardY, GameObject.FindWithTag("Player").transform.up) + 90.0f) - prevPitch;
+        //changeValueY = (-Vector3.Angle(standardX, -GameObject.FindWithTag("Player").transform.forward) + 90.0f) - prevYaw;
+        //changeValueZ = (-Vector3.Angle(standardX, GameObject.FindWithTag("Player").transform.up) + 90.0f) - prevRoll;
+
+        
+        //각도 변화 계산하여 대입.
         if (rotatingRailLeft == false)
         {
             //급격한 각도 변화 제한.
             if (30 <= tr.eulerAngles.x - prevX || tr.eulerAngles.x - prevX <= -30)
                 ;
             else
-                x = tr.eulerAngles.x - prevX;
+                changeValueX = tr.eulerAngles.x - prevX;
 
             if (30 <= tr.eulerAngles.y - prevY || tr.eulerAngles.y - prevY <= -30)
                 ;
             else
-                y = tr.eulerAngles.y - prevY;
+                changeValueY = tr.eulerAngles.y - prevY;
 
             if (30 <= tr.eulerAngles.z - prevZ || tr.eulerAngles.z - prevZ <= -30)
                 ;
             else
-                z = tr.eulerAngles.z - prevZ;
+                changeValueZ = tr.eulerAngles.z - prevZ;
         }
+        
 
 
         //float dist = Vector3.Distance(tr.position,prevTr);
@@ -281,6 +301,12 @@ public class CapsuleCtrl : MonoBehaviour {
             distForYAxis = tr.position.y - prevTr.y;
 
             nextSave = Time.time + delay;
+
+            //이전 각도 구하는 코드(스크립트로 구하는).
+            prevPitch = -Vector3.Angle(standardY, GameObject.FindWithTag("Player").transform.up) + 90.0f;
+            prevRoll = -Vector3.Angle(standardX, -GameObject.FindWithTag("Player").transform.forward) + 90.0f;
+            prevYaw = -Vector3.Angle(standardX, GameObject.FindWithTag("Player").transform.up) + 90.0f;
+
 
             //이전 각도 구하는 코드.
             prevX = tr.eulerAngles.x;

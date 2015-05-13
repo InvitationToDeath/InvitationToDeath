@@ -31,6 +31,7 @@ public class Network : MonoBehaviour
     private Transform player;
 
     private Vector3 position;
+
     private Vector3 standardX = new Vector3(1, 0, 0);
     private Vector3 standardY = new Vector3(0, 1, 0);
     private Vector3 standardZ = new Vector3(0, 0, 1);
@@ -110,17 +111,19 @@ public class Network : MonoBehaviour
 
         motion.start = Time.timeScale;
 
-        /*
-        //기존의 이전 rotation 값과의 차이로 전송 방법.
-        motion.pitching = GameObject.FindWithTag("Player").GetComponent<CapsuleCtrl>().x;
-        motion.rolling = GameObject.FindWithTag("Player").GetComponent<CapsuleCtrl>().y;
-        motion.yawing = GameObject.FindWithTag("Player").GetComponent<CapsuleCtrl>().z;
-        */
+        
+        //이전 객차의 rotation 값 or 스크립트로 구한 각도 값과 현재 값의 차이를 전송하는 방법.
+        motion.pitching = GameObject.FindWithTag("Player").GetComponent<CapsuleCtrl>().changeValueX;
+        motion.rolling = GameObject.FindWithTag("Player").GetComponent<CapsuleCtrl>().changeValueY;
+        motion.yawing = GameObject.FindWithTag("Player").GetComponent<CapsuleCtrl>().changeValueZ;
+        
 
-        //스크립트로 각도를 구하여 전송 방법. (yawing은 이전 rotation 값의 차이로 쓰는 게 좋을 듯 함.)
+        /*
+        //스크립트로 각도를 구하여 각도만 전송하는 방법. (yawing은 이전 rotation 값의 차이로 쓰는 게 좋을 듯 함.)
         motion.pitching = -Vector3.Angle(standardY, GameObject.FindWithTag("Player").transform.up) + 90.0f;
         motion.rolling = -Vector3.Angle(standardX, -GameObject.FindWithTag("Player").transform.forward) + 90.0f;
         motion.yawing = -Vector3.Angle(standardX, GameObject.FindWithTag("Player").transform.up) + 90.0f;
+        */
 
         motion.rotationX = Vector3.Angle(standardY, GameObject.FindWithTag("Player").transform.up);
         motion.heave = 0; //GameObject.FindWithTag("Player").GetComponent<CapsuleCtrl>().heaveVelocity;
