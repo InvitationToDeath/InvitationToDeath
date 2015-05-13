@@ -31,7 +31,9 @@ public class Network : MonoBehaviour
     private Transform player;
 
     private Vector3 position;
-    private Vector3 standardZ = new Vector3(0, 1, 0);
+    private Vector3 standardX = new Vector3(1, 0, 0);
+    private Vector3 standardY = new Vector3(0, 1, 0);
+    private Vector3 standardZ = new Vector3(0, 0, 1);
 
     public struct Motion
     {
@@ -99,17 +101,28 @@ public class Network : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        position = GameObject.FindWithTag("Player").transform.up;
+        //position = GameObject.FindWithTag("Player").transform.up;
+
         //abc.a = 3.0f;
         //abc.b = 2.0f;
         //abc.c = 1.0f;
         //motion.start = 1;
 
         motion.start = Time.timeScale;
+
+        /*
+        //기존의 이전 rotation 값과의 차이로 전송 방법.
         motion.pitching = GameObject.FindWithTag("Player").GetComponent<CapsuleCtrl>().x;
         motion.rolling = GameObject.FindWithTag("Player").GetComponent<CapsuleCtrl>().y;
         motion.yawing = GameObject.FindWithTag("Player").GetComponent<CapsuleCtrl>().z;
-        motion.rotationX = Vector3.Angle(standardZ, position);
+        */
+
+        //스크립트로 각도를 구하여 전송 방법. (yawing은 이전 rotation 값의 차이로 쓰는 게 좋을 듯 함.)
+        motion.pitching = -Vector3.Angle(standardY, GameObject.FindWithTag("Player").transform.up) + 90.0f;
+        motion.rolling = -Vector3.Angle(standardX, -GameObject.FindWithTag("Player").transform.forward) + 90.0f;
+        motion.yawing = -Vector3.Angle(standardX, GameObject.FindWithTag("Player").transform.up) + 90.0f;
+
+        motion.rotationX = Vector3.Angle(standardY, GameObject.FindWithTag("Player").transform.up);
         motion.heave = 0; //GameObject.FindWithTag("Player").GetComponent<CapsuleCtrl>().heaveVelocity;
        
         buffer = StructToByte(motion);
