@@ -29,11 +29,11 @@ public class Move : MonoBehaviour
         //    rigidbody.AddRelativeForce(Vector3.up * 10.0f);
 
         if (Input.GetKey("z"))
-            rigidbody.AddRelativeForce(new Vector3(0, 0, 1) * 10.0f);
+            rigidbody.AddForce(new Vector3(0, 0, 1) * 10.0f);
         if (Input.GetKey("x"))
-            rigidbody.AddRelativeForce(new Vector3(1, 0, 0) * 10.0f);
+            rigidbody.AddForce(new Vector3(1, 0, 0) * 10.0f);
         if (Input.GetKey("y"))
-            rigidbody.AddRelativeForce(new Vector3(0, 1, 0) * 10.0f);
+            rigidbody.AddForce(new Vector3(0, 1, 0) * 10.0f);
 
         //if (Input.GetKey("z"))
         //    rigidbody.AddRelativeForce(transform.right * 10.0f);
