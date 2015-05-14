@@ -50,7 +50,7 @@ public class CapsuleCtrl : MonoBehaviour {
     private float nextSave = 0.0f;
 
     //객차 액셀, 브레이크 속도.
-    private float speed = 20.0f;
+    private float speed = 2200.0f;
     public bool rotatingRailLeft = false;
     public bool rotatingRailRight = false;
     
@@ -75,7 +75,7 @@ public class CapsuleCtrl : MonoBehaviour {
         if (Input.GetKey("space"))
         {
             //로컬좌표기준 힘을 가함.
-            rigidbody.AddForce(transform.up * speed);
+            rigidbody.AddForce(transform.up * speed * Time.deltaTime);
             //rigidbody.AddRelativeForce(Vector3.forward * speed);
 
             //전역좌표기준 힘을 가함.
@@ -84,7 +84,7 @@ public class CapsuleCtrl : MonoBehaviour {
         else if (Input.GetKey("b"))
         {
             //로컬좌표기준 힘을 가함.
-            rigidbody.AddForce(transform.up * (-speed));
+            rigidbody.AddForce(transform.up * (-speed) * Time.deltaTime);
             //rigidbody.AddRelativeForce(Vector3.forward * speed);
 
             //전역좌표기준 힘을 가함.
@@ -107,7 +107,7 @@ public class CapsuleCtrl : MonoBehaviour {
         ////각도 변화 계산하여 대입.(스크립트로 구한 각도)
         //changeValueX = (-Vector3.Angle(standardY, GameObject.FindWithTag("Player").transform.up) + 90.0f) - prevPitch;
         //changeValueY = (-Vector3.Angle(standardX, -GameObject.FindWithTag("Player").transform.forward) + 90.0f) - prevYaw;
-        //changeValueZ = (-Vector3.Angle(standardX, GameObject.FindWithTag("Player").transform.up) + 90.0f) - prevRoll;
+        //changeValueZ = (Vector3.Angle(standardZ, GameObject.FindWithTag("Player").transform.right)-90.0f) - prevRoll;
 
         
         //각도 변화 계산하여 대입.
@@ -305,7 +305,7 @@ public class CapsuleCtrl : MonoBehaviour {
             //이전 각도 구하는 코드(스크립트로 구하는).
             prevPitch = -Vector3.Angle(standardY, GameObject.FindWithTag("Player").transform.up) + 90.0f;
             prevRoll = -Vector3.Angle(standardX, -GameObject.FindWithTag("Player").transform.forward) + 90.0f;
-            prevYaw = -Vector3.Angle(standardX, GameObject.FindWithTag("Player").transform.up) + 90.0f;
+            prevYaw = Vector3.Angle(standardZ, GameObject.FindWithTag("Player").transform.right) - 90.0f;
 
 
             //이전 각도 구하는 코드.
