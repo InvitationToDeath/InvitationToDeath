@@ -111,19 +111,26 @@ public class Network : MonoBehaviour
 
         motion.start = Time.timeScale;
 
-        
-        //이전 객차의 rotation 값 or 스크립트로 구한 각도 값과 현재 값의 차이를 전송하는 방법.
-        motion.pitching = GameObject.FindWithTag("Player").GetComponent<CapsuleCtrl>().changeValueX;
-        motion.rolling = GameObject.FindWithTag("Player").GetComponent<CapsuleCtrl>().changeValueY;
-        motion.yawing = GameObject.FindWithTag("Player").GetComponent<CapsuleCtrl>().changeValueZ;
-        
 
-        /*
+        ////이전 객차의 rotation 값 or 스크립트로 구한 각도 값과 현재 값의 차이를 전송하는 방법.
+        //motion.pitching = GameObject.FindWithTag("Player").GetComponent<CapsuleCtrl>().changeValueX;
+        //motion.rolling = GameObject.FindWithTag("Player").GetComponent<CapsuleCtrl>().changeValueY;
+        //motion.yawing = GameObject.FindWithTag("Player").GetComponent<CapsuleCtrl>().changeValueZ;
+
+
+
         //스크립트로 각도를 구하여 각도만 전송하는 방법. (yawing은 이전 rotation 값의 차이로 쓰는 게 좋을 듯 함.)
         motion.pitching = -Vector3.Angle(standardY, GameObject.FindWithTag("Player").transform.up) + 90.0f;
-        motion.rolling = -Vector3.Angle(standardX, -GameObject.FindWithTag("Player").transform.forward) + 90.0f;
-        motion.yawing = Vector3.Angle(standardZ, GameObject.FindWithTag("Player").transform.right)-90.0f;
-        */
+        if (true == GameObject.FindWithTag("Player").GetComponent<CapsuleCtrl>().isForwardDirection)
+        {
+            motion.rolling = -Vector3.Angle(standardX, -GameObject.FindWithTag("Player").transform.forward) + 90.0f;
+            motion.yawing = Vector3.Angle(standardZ, GameObject.FindWithTag("Player").transform.right) - 90.0f;
+        }
+        else
+        {
+            motion.rolling = -(-Vector3.Angle(standardX, -GameObject.FindWithTag("Player").transform.forward) + 90.0f);
+            motion.yawing = -(Vector3.Angle(standardZ, GameObject.FindWithTag("Player").transform.right) - 90.0f);
+        }
 
         motion.rotationX = Vector3.Angle(standardY, GameObject.FindWithTag("Player").transform.up)-90.0f;
         motion.heave = 0; //GameObject.FindWithTag("Player").GetComponent<CapsuleCtrl>().heaveVelocity;

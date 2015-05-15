@@ -19,6 +19,9 @@ public class CapsuleCtrl : MonoBehaviour {
     private float prevYaw;
     private float prevRoll;
 
+    //z축 기준 양의 방향으로 가고있는지 음의 방향으로 가고있는지 판단하기 위한 변수.
+    public bool isForwardDirection;
+
 
     //두 포지션 사이의 거리를 저장할 변수.
     private float dist;
@@ -102,13 +105,53 @@ public class CapsuleCtrl : MonoBehaviour {
         //지속적인 힘 가하는 코드.
         if(true == addForce)
             rigidbody.AddForce(transform.up * addForceSpeed * Time.deltaTime); //시간의 개념 도입 위해 Time.deltaTime 곱해줌.
-       
 
-        ////각도 변화 계산하여 대입.(스크립트로 구한 각도)
-        //changeValueX = (-Vector3.Angle(standardY, GameObject.FindWithTag("Player").transform.up) + 90.0f) - prevPitch;
-        //changeValueY = (-Vector3.Angle(standardX, -GameObject.FindWithTag("Player").transform.forward) + 90.0f) - prevYaw;
-        //changeValueZ = (Vector3.Angle(standardZ, GameObject.FindWithTag("Player").transform.right)-90.0f) - prevRoll;
 
+        //90도 이상이면 뒤쪽으로 이동 중인 것.
+        float forwardBack = Vector3.Angle(standardZ, GameObject.FindWithTag("Player").transform.up);
+        //Debug.Log("forwardBack" + forwardBack);
+
+        if (90.0f < forwardBack)
+            isForwardDirection = false;
+        else if (forwardBack < 90.0f)
+            isForwardDirection = true;
+
+
+        //각도 변화 계산하여 대입.(스크립트로 구한 각도)
+        changeValueX = (-Vector3.Angle(standardY, GameObject.FindWithTag("Player").transform.up) + 90.0f) - prevPitch;
+
+        //z축 기준 양의 방향으로 이동 중이 아니면 양/음의 값을 반전
+        if (true == isForwardDirection)
+        {
+            changeValueY = (-Vector3.Angle(standardX, -GameObject.FindWithTag("Player").transform.forward) + 90.0f) - prevYaw;
+            changeValueZ = (Vector3.Angle(standardZ, GameObject.FindWithTag("Player").transform.right) - 90.0f) - prevRoll;
+        }
+        else
+        {
+            changeValueY = -(-Vector3.Angle(standardX, -GameObject.FindWithTag("Player").transform.forward) + 90.0f) - prevYaw;
+            changeValueZ = -(Vector3.Angle(standardZ, GameObject.FindWithTag("Player").transform.right) - 90.0f) - prevRoll;
+        }
+
+
+        ////각도 변화 계산하여 대입.
+        //if (rotatingRailLeft == false)
+        //{
+        //    //급격한 각도 변화 제한.
+        //    if (30 <= tr.eulerAngles.x - prevX || tr.eulerAngles.x - prevX <= -30)
+        //        ;
+        //    else
+        //        changeValueX = tr.eulerAngles.x - prevX;
+
+        //    if (30 <= tr.eulerAngles.y - prevY || tr.eulerAngles.y - prevY <= -30)
+        //        ;
+        //    else
+        //        changeValueY = tr.eulerAngles.y - prevY;
+
+        //    if (30 <= tr.eulerAngles.z - prevZ || tr.eulerAngles.z - prevZ <= -30)
+        //        ;
+        //    else
+        //        changeValueZ = tr.eulerAngles.z - prevZ;
+        //}
         
         //각도 변화 계산하여 대입.
         if (rotatingRailLeft == false)
@@ -304,8 +347,18 @@ public class CapsuleCtrl : MonoBehaviour {
 
             //이전 각도 구하는 코드(스크립트로 구하는).
             prevPitch = -Vector3.Angle(standardY, GameObject.FindWithTag("Player").transform.up) + 90.0f;
-            prevRoll = -Vector3.Angle(standardX, -GameObject.FindWithTag("Player").transform.forward) + 90.0f;
-            prevYaw = Vector3.Angle(standardZ, GameObject.FindWithTag("Player").transform.right) - 90.0f;
+
+            //앞 방향으로 가고있다면
+            if (true == isForwardDirection)
+            {
+                prevRoll = -Vector3.Angle(standardX, -GameObject.FindWithTag("Player").transform.forward) + 90.0f;
+                prevYaw = Vector3.Angle(standardZ, GameObject.FindWithTag("Player").transform.right) - 90.0f;
+            }
+            else
+            {
+                prevRoll = -(-Vector3.Angle(standardX, -GameObject.FindWithTag("Player").transform.forward) + 90.0f);
+                prevYaw = -(Vector3.Angle(standardZ, GameObject.FindWithTag("Player").transform.right) - 90.0f);
+            }
 
 
             //이전 각도 구하는 코드.
